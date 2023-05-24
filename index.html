@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Exercises</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+    <div class="container"> 
+        <!-- Number 1 -->
+        <div class="Number1">
+        <label for="Number1">Number 1</label><br>
+        <input type="number" id="num1" required>
+        </div> <br>
+        <!-- Operator -->
+        <div class="operator">
+        <label for="operator">Operator</label> <br>
+        <input type="number" id="op"  required>
+        </div>
+        <!-- Number 2 -->
+        <div class="Number2">
+            <label for="Number2">Number 2</label> <br>
+            <input type="number" id="num2"  required>
+        </div>
+        <button onclick="btnReslts()" id="reslt" class="results">Display</button>
+    </div>
 <script src="script/code.js"></script>    
 </body>
 </html>
