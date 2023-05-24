@@ -1,3 +1,5 @@
+// QUESTION 1
+
 // 1. Variable
 // Variables are place holders. They are like a plastci bag but you have to put items inside that the plastic bag will hold.
 // 2. Value
@@ -26,4 +28,30 @@ function fullName() {
   }
   
   fullName();
-  
+ //______________________________________________________________________________ 
+
+//   QUESTION 2
+
+
+let myname = 'Kgodisho'
+let surname = 'Lebopa'
+let age = 24
+subjects = ['CSS','HTML','BOOTSTRAP','javascript']
+let address = {
+     strname : 'Lower Church street' ,
+     strno : 1 ,
+     suburb : 'Wynberg ',
+     city : 'Cape Town' ,
+    country : 'South Africa'
+
+}
+
+console.log(myname);
+console.log(surname);
+console.log(age);
+console.log(subjects);
+console.log(address);
+
+//________________________________________________________________________________
+
+    
