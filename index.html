@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Exercises</title>
-</head>
-<body>
-  
-<script src="script/code.js"></script>    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Number 1 -->
+      <div class="Number1">
+        <label>Number 1</label>
+        <input type="text" id="num1" required />
+      </div>
+      <br />
+      <!-- Operator -->
+      <div class="operator">
+        <label>Operator</label>
+        <input type="text" id="op" required />
+      </div>
+      <br />
+      <!-- Number 2 -->
+      <div class="Number2">
+        <label>Number 2</label>
+        <input type="text" id="num2" required />
+      </div>
+      <br />
+      <!-- empty span -->
+      <div class="lblresult">
+        <span id="lblResult"></span>
+      </div>
+      <br />
+
+      <button onclick="calcResult()" id="btnResult" class="results">
+        Display
+      </button>
+    </div>
+    <script src="script/code.js"></script>
+  </body>
 </html>
