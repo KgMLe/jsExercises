@@ -53,24 +53,36 @@
 //________________________________________________________________________________
 // QUESTION 3
 
-function calcResult() {
-  let num1 = parseFloat (document.querySelector("#num1").value);
-  let op = document.querySelector("#op").value;
-  let num2 = parseFloat (document.querySelector("#num2").value);
-  let lblResult = document.querySelector("#lblResult");
+// function calcResult() {
+//   let num1 = parseFloat (document.querySelector("#num1").value);
+//   let op = document.querySelector("#op").value;
+//   let num2 = parseFloat (document.querySelector("#num2").value);
+//   let lblResult = document.querySelector("#lblResult");
 
-  if (op == "+") {
-    lblResult.textContent = num1 + num2;
-  } else if (op == "-") {
-    lblResult.textContent = num1 - num2;
-  } else if (op == "*") {
-    lblResult.textContent = num1 * num2;
-  } else if (op == "/") {
-    lblResult.textContent = num1 / num2;
-  } else {
-     lblResult.textContent = "error";
- }
- console.log(lblResult);
+//   if (op == "+") {
+//     lblResult.textContent = num1 + num2;
+//   } else if (op == "-") {
+//     lblResult.textContent = num1 - num2;
+//   } else if (op == "*") {
+//     lblResult.textContent = num1 * num2;
+//   } else if (op == "/") {
+//     lblResult.textContent = num1 / num2;
+//   } else {
+//      lblResult.textContent = "error";
+//  }
+//  console.log(lblResult);
 
+// }
+
+//____________________________________________________________________
+//QUESTION 4
+
+
+function reverse(str) {
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+      newString += str[i];
+  }
+  return newString;
 }
-
+console.log(reverse("programming"));
