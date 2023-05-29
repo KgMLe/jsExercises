@@ -78,11 +78,52 @@
 //QUESTION 4
 
 
-function reverse(str) {
-  let newString = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-      newString += str[i];
+// function reverse(str) {
+//   let newString = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//       newString += str[i];
+//   }
+//   return newString;
+// }
+// console.log(reverse("programming"));
+
+//_____________________________________________________
+//QUESTION 5
+
+let peopleNames = [
+  {
+    name: "Kgodisho",
+    dob: '2020-03-25'
+    
+  },
+  {
+    name: "Deline",
+    dob: '1999-12-17'
+  },
+  {
+    name: "Maila",
+    dob: '2007-07-15'
   }
-  return newString;
+  
+]
+//Display Name
+let people = peopleNames.find(peopleNames => peopleNames.name === "Kgodisho")
+console.log(people);
+
+//getAge
+let dob = new Date(people.dob);
+let today = new Date();
+let age = today.getFullYear() - dob.getFullYear();
+console.log("Kgodisho is " + age + " years old");
+
+// calculate how many days until next birthday
+
+dob.setFullYear(today.getFullYear())
+if (today > dob) {
+  dob.setFullYear(today.getFullYear() +1 );
 }
-console.log(reverse("programming"));
+
+let nextBday = Math.floor((today - dob) / (1000 * 60 *60 * 24));
+console.log("Kgodisho's birthday is coming up in " + nextBday +" days" );
+
+
